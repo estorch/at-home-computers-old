@@ -1,0 +1,356 @@
+// Site-wide
+html {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  color:#000;
+  font-size: 10pt;
+  background: #ffffff;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+h3, h1, p, label {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+  color: #1c1c1c;
+  margin: 0px;
+}
+
+hr {
+  background:#ccc;
+  color:#ccc;
+  width:100%;
+  height:2px;
+  margin:2em 0;
+  padding:0;
+  border:none;
+}
+
+hr.space {
+  background: #fff;
+  color: #fff;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+[ng-click] {
+  cursor: pointer;
+}
+
+.container {
+  background-image: url('../assets/images/background.jpg');
+  background-repeat: repeat;
+  min-height: 100%;
+  min-width: 100%;
+  position: relative;
+  border: none;
+}
+
+// Header / Menu
+.navbar {
+  background-color: #0d0b11;
+  width: 100%;
+  height: 60px;
+  position: relative;
+  top: 0px;
+}
+
+.navbar-title {
+  width: 200px;
+  float: left;
+}
+
+.navbar-item {
+  width: 75px;
+  float: right;
+}
+
+.navbar-name {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.navbar-title .navbar-name p {
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 60px;
+  font-weight: 200;
+}
+
+.navbar-name p {
+  font-size: 13px;
+  color: #ffffff;
+  line-height: 60px;
+  font-weight: 200;
+}
+
+#edo-navbar-tail {
+  width: 90px;
+  float: left;
+  text-align: center;
+}
+
+#edo-navbar-tail img {
+  padding-top: 25px;
+}
+
+// Content
+#edo-content-wrapper {
+  width: 980px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 10px;
+  padding-bottom: 60px;
+}
+
+.edo-content-header {
+  margin: 0px auto;
+  width: 180px;
+}
+
+.edo-content-header-section-left {
+  display: inline-block;
+  width: 10px;
+  float: left;
+}
+
+.edo-content-header-section-center {
+  display: inline-block;
+  width: 90%;
+}
+
+.edo-content-header-section-right {
+  display: inline-block;
+  width: 8px;
+  float: right;
+}
+
+//.edo-content-header-end-section {
+//  float: none;
+//  width: 7px;
+//}
+
+.page-title {
+  font-size: 24px;
+  color: #1c1c1c;
+}
+
+.page-title-sub {
+  font-size: 18px;
+}
+
+.page-subheader {
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.page-description {
+  font-size: 16px;
+  margin-left: 50px;
+  margin-right: 65px;
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+
+.page-content {
+  padding-left: 20px;
+  padding-bottom: 15px;
+  font-size: 14px;
+}
+
+.edo-content {
+  padding-top: 20px;
+}
+
+
+// Modals
+.edo-modal-header {
+  background: #f4f4f4;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.edo-modal-title {
+  text-align: center;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.edo-modal-body {
+  font-size: 14px;
+  color: #1c1c1c;
+  padding-top: 15px;
+}
+
+.edo-modal-subtitle {
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+
+.edo-modal-footer {
+  background-color: #f8f8f8;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+
+// Footer
+#edo-footer-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  bottom: 30px;
+  margin: 0px auto;
+}
+
+#edo-footer {
+  background-color: #f0f0f0;
+  width: 980px;
+  margin: 0px auto;
+  border-radius: 5px;
+
+  text-align: center;
+}
+
+.edo-web-service-title {
+  font-size: 20px;
+  font-style: oblique;
+  font-weight: 400;
+  padding-bottom: 3px;
+}
+
+.edo-web-service-soap {
+  font-weight: 300;
+  font-size: 20px;
+  color: #3070b8;
+  float: right;
+  font-style: normal;
+}
+
+.edo-web-service-rest {
+  font-weight: 300;
+  font-size: 20px;
+  color: #f8572b;
+  text-align: right;
+  float: right;
+  font-style: normal;
+}
+
+.edo-web-service-description {
+  font-size: 13px;
+  padding-left: 20px;
+}
+
+#edo-footer p {
+  font-size: 14px;
+}
+
+// General stuff
+.contact-name {
+  padding-left: 30px;
+  padding-bottom: 3px;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.contact-info {
+  padding-left: 30px;
+  font-size: 22px;
+}
+
+.email {
+  margin-bottom: 3px;
+}
+
+.center {
+  text-align: center;
+}
+
+object.resume {
+  width: 845px;
+  height: 22.25in;
+}
+
+.foobar {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+  text-align: left;
+  font-style: italic;
+}
+
+.checking {
+  font-weight: 400;
+  color: #f59026;
+}
+
+.online {
+  font-weight: 400;
+  color: #8bc441;
+}
+
+.offline {
+  font-weight: 400;
+  color: #f34135;
+}
+
+.bottom-buffer {
+  padding: 10px;
+}
+
+.required {
+  color: #ff0000;
+  font-size: 11px;
+}
+
+.note {
+  font-size: 11px;
+}
+
+.sort-caveat {
+  color: #ff0000;
+  font-size: 13px;
+}
+
+.warning {
+  font-weight: 300;
+  font-size: 20px;
+  color: #f8572b;
+}
+
+.photo {
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
+  border: 1px solid #1c1c1c;
+}
+
+.edo-border-right {
+  border-right: 1px solid #dddddd;
+  height: 100px;
+}
+
+// Forms
+.css-form input.ng-invalid.ng-dirty, textarea.ng-invalid.ng-dirty {
+  background-color: #EBD1D3;
+}
+
+.css-form input.ng-valid.ng-dirty, textarea.ng-valid.ng-dirty {
+  background-color: #B8F8C0;
+}

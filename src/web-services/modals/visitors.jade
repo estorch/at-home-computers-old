@@ -1,0 +1,47 @@
+div
+  div.modal-header.edo-modal-header
+    h3.modal-title.edo-modal-title {{ pageTitle }}
+  div.modal-body
+      div.form-group
+        div.row
+          div.col-xs-6.edo-border-right
+            div.row
+              form.css-form(name="visitorPostForm", id="contactForm", novalidate)
+                p.edo-modal-subtitle.cetner POST Visitor
+                label.col-xs-3(for="name")
+                  span.required *&nbsp;
+                  | Name:
+                div.col-xs-5
+                  input.form-control.email-input(type="text", placeholder="Name", name="name", id="name", ng-model="postRequest.name", required)
+                  span.required(ng-show="visitorPostForm.name.$valid || visitorPostForm.name.$pristine") &nbsp;
+                  span.required(ng-show="visitorPostForm.name.$error.required && visitorPostForm.name.$dirty") Name required
+                div.col-xs-4
+                  button.btn.btn-primary.btn-sm(ng-click="submitPost()", ng-disabled="visitorPostForm.$invalid")
+                    | Submit
+                    br
+                    | (POST)
+          div.col-xs-6
+            div.row
+              form.css-form(name="visitorGetForm", id="contactGetForm", ng-submit="submitGet()", novalidate)
+                p.edo-modal-subtitle.cetner GET Visitor(s)
+                label.col-xs-2(for="id") ID:
+                div.col-xs-6
+                  input.form-control.email-input(type="text", placeholder="ID", name="id", id="id", ng-model="getRequest.id")
+                  span.note Leave blank to retreive all entires.
+                div.col-xs-4
+                  button.btn.btn-primary.btn-sm(ng-click="submitGet()")
+                    | Submit
+                    br
+                    | (GET)
+      hr
+      div.row
+        div.col-xs-12
+          p.edo-modal-subtitle.cetner Response JSON
+          div.form-group
+            div.row
+              div.col-xs-12
+                textarea.form-control(rows="8", placeholder="Raw JSON", name="response", id="response", ng-model="responseString")
+
+  div.modal-footer.edo-modal-footer
+    button.btn.btn-warning.btn-sm(ng-click="clear()") Clear
+    button.btn.btn-danger.btn-sm(ng-click="dismiss()") Close

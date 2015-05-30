@@ -1,0 +1,47 @@
+div#edo-page-wrapper
+      div#edo-navbar-wrapper
+        div#edo-navbar
+          div#edo-navbar-logo
+            a(ng-href="#/athome", alt="@Home Computers")
+              img(ng-src="assets/images/logo.jpg")
+          div.edo-navbar-item#athome
+            a(ng-href="#/athome")
+              div.edo-navbar-overbar#athome-overbar
+              div.edo-navbar-name#athome-name
+                p @Home
+          div.edo-navbar-item#repairs
+            a(ng-href="#/repairs")
+              div.edo-navbar-overbar#repairs-overbar
+              div.edo-navbar-name#repairs-name
+                p Computer Repairs
+          div.edo-navbar-item#websites
+            a(ng-href="#/websites")
+              div.edo-navbar-overbar#websites-overbar
+              div.edo-navbar-name#websites-name
+                p Website Design
+          div.edo-navbar-item#tutoring
+            a(ng-href="#/tutoring")
+              div.edo-navbar-overbar#tutoring-overbar
+              div.edo-navbar-name#tutoring-name
+                p Tutoring
+          div.edo-navbar-item#contact
+            a(ng-href="#/contact")
+              div.edo-navbar-overbar#contact-overbar
+              div.edo-navbar-name#contact-name
+                p Contact
+          div#edo-navbar-tail
+            a(href="http://www.linkedin.com/pub/eric-storch/5a/5ba/654/", target="_blank")
+              img.tail-img#linkedin(ng-src='assets/images/linkedin.jpg')
+            a(href="https://github.com/himalstorch", target="_blank")
+              img.tail-img#github(ng-src='assets/images/github.jpg')
+      div#edo-content-wrapper
+        div(ng-view)
+
+      div#edo-footer-wrapper
+        div#edo-footer
+          p
+            | © 2014 Eric Storch<br>
+            | Site Created With&nbsp;
+            a(ng-href="https://angularjs.org/", target="_blank") AngularJS&nbsp;
+            | /&nbsp;
+            a(ng-href="http://getbootstrap.com/", target="_blank") Bootstrap

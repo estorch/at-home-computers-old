@@ -1,0 +1,54 @@
+doctype html
+html(lang="en")
+    head
+        title @Home Computers - Seattle, WA
+        meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+        meta(http-equiv='Content-Style-Type', content='text/css')
+        meta(name='copyright', content='© Eric Storch')
+        meta(name='author', lang='en', content='Eric Storch')
+        meta(name='robots', content='Index,Follow')
+        meta(name='description', content='Mobile Computer Repairs, Computer Use and Programming Tutoring, Website Design')
+        meta(name='keyword', content='Eric Storch, Software Developer, Programmer, Computer Repair, Tutoring, Seattle, Bellevue, Issaquah, Redmond, Samammish')
+        link(rel="shortcut icon", href="/favicon.ico", type="image/x-icon")
+        link(rel="icon", href="/favicon.ico", type="image/x-icon")
+        link(href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400', rel='stylesheet', type='text/css')
+    body(ng-app="app", ng-controller="appController")
+      div.container
+        div.navbar-wrapper
+          div.navbar
+            div.navbar-title
+              div.navbar-name#athome
+                p
+                  b @Home
+                  | Computers
+            div.navbar-item
+              div.navbar-name.pull-right#item1
+                p Repairs
+            div.navbar-item
+              div.navbar-name.pull-right#item2
+                p Website Design
+            div.navbar-item
+              div.navbar-name.pull-right#item3
+                p Tutoring
+            div.navbar-item
+              div.navbar-name.pull-right#item3
+                p Testemonial
+            div.navbar-item
+              div.navbar-name.pull-right#item3
+                p Contact
+
+
+        div#edo-content-wrapper
+          div(ng-view)
+
+link(rel="stylesheet", href="css/bootstrap.css")
+link(rel="stylesheet", href="css/custom.css")
+script(src="js/angular.js")
+script(src="js/angular-route.js")
+script(src="js/angular-resource.js")
+script(src="js/ui-bootstrap-tpls.js")
+script(src="js/jquery.js")
+script(src="js/app.js")
+script(src="js/templates.js")
+script(src="js/services.js")
+script(src="js/custom.js")
