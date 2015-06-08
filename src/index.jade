@@ -1,45 +1,87 @@
 doctype html
 html(lang="en")
-    head
-        title @Home Computers - Seattle, WA
-        meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
-        meta(http-equiv='Content-Style-Type', content='text/css')
-        meta(name='copyright', content='© Eric Storch')
-        meta(name='author', lang='en', content='Eric Storch')
-        meta(name='robots', content='Index,Follow')
-        meta(name='description', content='Mobile Computer Repairs, Computer Use and Programming Tutoring, Website Design')
-        meta(name='keyword', content='Eric Storch, Software Developer, Programmer, Computer Repair, Tutoring, Seattle, Bellevue, Issaquah, Redmond, Samammish')
-        link(rel="shortcut icon", href="/favicon.ico", type="image/x-icon")
-        link(rel="icon", href="/favicon.ico", type="image/x-icon")
-        link(href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400', rel='stylesheet', type='text/css')
-    body(ng-app="app", ng-controller="appController")
-      div.container
-        div.navbar-wrapper
-          div.navbar
-            div.navbar-title
-              div.navbar-name#athome
-                p
-                  b @Home
-                  | Computers
-            div.navbar-item
-              div.navbar-name.pull-right#item1
-                p Repairs
-            div.navbar-item
-              div.navbar-name.pull-right#item2
-                p Website Design
-            div.navbar-item
-              div.navbar-name.pull-right#item3
-                p Tutoring
-            div.navbar-item
-              div.navbar-name.pull-right#item3
-                p Testemonial
-            div.navbar-item
-              div.navbar-name.pull-right#item3
-                p Contact
+  head
+    title @Home Computers - Seattle, WA
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    meta(http-equiv='Content-Style-Type', content='text/css')
+    meta(name='copyright', content='© Eric Storch')
+    meta(name='author', lang='en', content='Eric Storch')
+    meta(name='robots', content='Index,Follow')
+    meta(name='description', content='Mobile Computer Repairs, Computer Use and Programming Tutoring, Website Design')
+    meta(name='keyword', content='Eric Storch, Software Developer, Programmer, Computer Repair, Tutoring, Seattle, Bellevue, Issaquah, Redmond, Samammish')
+    link(rel="shortcut icon", href="/favicon.ico", type="image/x-icon")
+    link(rel="icon", href="/favicon.ico", type="image/x-icon")
+    link(href='http://fonts.googleapis.com/css?family=Raleway:400,600,800', rel='stylesheet', type='text/css')
 
+  body(ng-app="app", ng-controller="appController")
+    div.container
+      div.navbar
+        div.navbar-title.pull-left
+          span.bold-title Home
+          span.normal-title Computers
+        div.navbar-item.pull-right
+          p
+           a Repairs
+        div.navbar-item.pull-right
+          p
+            a Website Design
+        div.navbar-item.pull-right
+          p
+            a Tutoring
+        div.navbar-item.pull-right
+          p
+            a Credentials
+        div.navbar-item.pull-right
+          p
+            a Testemonial
+        div.navbar-item.pull-right
+          p
+            a Contact
+      div.section#bg-video
+        video.bg-video(autoplay loop id="bgvid")
+          source(src="../assets/videos/vid.webm" type="video/webm")
+      div.section#section-one
+        div.grand-title-wrapper
+          p.grand-title Local Computer Services
+          p.grand-subtitle along with helpful advice
+        div.grand-content
+          p.section-description @HomeComputers is a locally owned and operated computer repair / website design service stationed here in the greater Seattle area. Backed by college degrees of decades of combined experience, we take pride in making your technology-oriented life easy and understandable.
+      div.section#section-two
+        p.section-header Our Services
+        p.section-subheader Versitle &#8226; Experienced &#8226; Local
+        img.divider(src="../assets/images/divider.jpg")
+        p.section-description We are a multi-talented group. Click below for information about specifics.
+        div.subsection
+          div.subsection-selection
+            img.section-two-icon(src="../assets/images/computer.jpg")
+            p.selection-title Computer Diagnostics & Repair
+            button(type="button" class="btn btn-danger")
+              | More
+          div.subsection-selection
+            img.section-two-icon(src="../assets/images/wifi.jpg")
+            p.selection-title Wireless Network Setup & Security
+            button(type="button" class="btn btn-danger")
+              | More
+          div.subsection-selection
+            img.section-two-icon(src="../assets/images/web.jpg")
+            p.selection-title Advanced Website Design
+            button(type="button" class="btn btn-danger")
+              | More
+          div.subsection-selection
+            img.section-two-icon(src="../assets/images/teaching.jpg")
+            p.selection-title Teaching & Tutoring
+            button(type="button" class="btn btn-danger")
+              | More
+          div.subsection-selection
+            img.section-two-icon(src="../assets/images/tutoring.jpg")
+            p.selection-title Consulting
+            button(type="button" class="btn btn-danger")
+              | More
 
-        div#edo-content-wrapper
-          div(ng-view)
+      div.section#section-three
+      div#edo-content
+        div(ng-view)
+
 
 link(rel="stylesheet", href="css/bootstrap.css")
 link(rel="stylesheet", href="css/custom.css")
