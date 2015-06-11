@@ -41,7 +41,7 @@ html(lang="en")
         video.bg-video(autoplay loop id="bgvid")
           source(src="../assets/videos/vid.webm" type="video/webm")
       div.section#section-one
-        div.grand-title-wrapper
+        div.grand-title-wrapper.left
           p.grand-title Local Computer Services
           p.grand-subtitle along with helpful advice
         div.grand-content
@@ -78,25 +78,20 @@ html(lang="en")
             button(type="button" class="btn btn-danger")
               | More
 
-      div.parallax
-        div.parallax-layer.parallax-layer-back
-          p.big Back
-          p.big Back
-          p.big Back
-          p.big Back
-          p.big Back
-          p.big Back
-        div.parallax-layer.parallax-layer-base#section-three
-          p.big Base
-          p.big Base
-          p.big Base
-          p.big Base
-          p.big Base
-
-
-      //div.section#section-three
-      div#edo-content
-        div(ng-view)
+      div.section#section-three
+        div.grand-title-wrapper.right
+          p.grand-title.shadow.right Computer Problems? We Come To You
+          p.grand-subtitle.outline.right on-site repairs and consultation
+      div.section#section-four
+        p Staff?
+      div.section#section-five
+        p Credentials
+      div.section#section-six
+        p Contact
+      div.section#section-six
+        p Contact
+      div.section#section-six
+        p Footer
 
 
 link(rel="stylesheet", href="css/bootstrap.css")
