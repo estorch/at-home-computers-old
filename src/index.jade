@@ -21,32 +21,32 @@ html(lang="en")
           span.normal-title Computers
         div.navbar-item.pull-right
           p
-           a Repairs
+           a(href="#section-one") Repairs
         div.navbar-item.pull-right
           p
-            a Website Design
+            a(href="#website-design") Website Design
         div.navbar-item.pull-right
           p
-            a Tutoring
+            a(href="#tutoring") Tutoring
         div.navbar-item.pull-right
           p
-            a Credentials
+            a(href="#credentials") Credentials
         div.navbar-item.pull-right
           p
-            a Testemonial
+            a(href="#testemonials") Testemonial
         div.navbar-item.pull-right
           p
-            a Contact
+            a(href="#contact") Contact
       div.section#bg-video
         video.bg-video(autoplay loop id="bgvid")
           source(src="../assets/videos/vid.webm" type="video/webm")
-      div.section#section-one
+      div.section#welcome
         div.grand-title-wrapper.left
           p.grand-title Local Computer Services
           p.grand-subtitle along with helpful advice
         div.grand-content
-          p.section-description @HomeComputers is a locally owned and operated computer repair / website design service stationed here in the greater Seattle area. Backed by college degrees of decades of combined experience, we take pride in making your technology-oriented life easy and understandable.
-      div.section#section-two
+          p.section-description @HomeComputers is a locally owned and operated computer repair / website design service stationed in the greater Seattle area. With a staff backed by college degrees and decades of experience, we take pride in making your technology-oriented life easy and understandable.
+      div.section#services
         p.section-header Our Services
         p.section-subheader Versitle &#8226; Experienced &#8226; Local
         img.divider(src="../assets/images/divider.jpg")
@@ -78,20 +78,22 @@ html(lang="en")
             button(type="button" class="btn btn-danger")
               | More
 
-      div.section#section-three
+      div.section#repairs
         div.grand-title-wrapper.right
           p.grand-title.shadow.right Computer Problems? We Come To You
           p.grand-subtitle.outline.right on-site repairs and consultation
-      div.section#section-four
-        p Staff?
-      div.section#section-five
-        p Credentials
-      div.section#section-six
+      div.section#about
+        p.section-header About Me
+        p.section-subheader Eric Storch
+        p.section-subheader Bachelor's Degree - Computer Science
+        img.divider(src="../assets/images/divider-black.jpg")
+      div.section#testemonials
+        p Testemonials
+      div.section#contact
         p Contact
-      div.section#section-six
-        p Contact
-      div.section#section-six
+      div.section#footer
         p Footer
+
 
 
 link(rel="stylesheet", href="css/bootstrap.css")
